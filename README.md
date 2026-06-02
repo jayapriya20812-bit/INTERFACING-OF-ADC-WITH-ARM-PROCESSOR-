@@ -32,13 +32,29 @@ simple example.c, Uart Receiver interrupt.c, lcd.c, lcd.h
 
  
  
-# PROGRAM:
-
-
- 
 # RESULTS
 
 
+
+```
+#include"lcd.h" 
+void ADCExp(); 
+int main(void)
+{
+ReceiverInterrupt(); 
+init_lcd();
+lcd_putstring(LINE1, "RAANA ADC DEMO "); 
+ADCExp();
+while(1)
+{
+}
+}
+```
+# OUTPUT :
+<img width="558" height="375" alt="514693376-43724009-8749-424c-934a-9600e558e026" src="https://github.com/user-attachments/assets/648f6a34-301a-4a28-a18b-d365d671e85a" />
+
+# RESULT:
+Thus,an ADC is interfaced with ARM LPC1768 Microprocessor .
 
 
 
